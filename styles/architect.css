@@ -100,7 +100,7 @@ main > section{
 
 
 /* featurs */
-.featurs{
+.teams{
     display: flex;
 }
 
@@ -131,9 +131,51 @@ main > section{
     color: #FF900E;
 }
 
-@media only screen and (max-width: 600px) {
 
-    .menu-list {
+.features{
+    gap: 140px;
+}
+
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+    background-color: #FF900E;
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.featured-architect img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .menu-list, .features {
         flex-direction: column;
     }
 
@@ -143,54 +185,55 @@ main > section{
 
 
     .main-width {
-        width: 540px;
+        width: auto;
         margin: 0 auto;
     }
 
     .hero-img img{
-        width: 50%;
+        width: 400px;
         margin: 0 auto;
     }
 
     .hero-text {
-        width: 425px;
+        width: auto;
         margin: 0 auto;
     }
     .featurs-img{
         display: block;
     }
 
-    .featurs{
+    .teams, .features{
         flex-direction: column;
     }
-    .featurs-details{
-        flex-direction: column-reverse;
-    }
+
 
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px){
 
     .main-width {
-        width: 840px;
+        width: auto;
         margin: 0 auto;
     }
 
     .hero-img img{
-        width: 70%;
+        width: 700px;
         margin: 0 auto;
     }
 
     .hero-text {
-        width: 825px;
+        width: auto;
         margin: 0 auto;
     }
-    .featurs{
+    .teams, .features{
         flex-direction: column;
     }
     .featurs-details{
         flex-direction: column-reverse;
     }
-    
+    .featur-texts{
+        padding: 0;
+        margin: 0 auto;
+    }
 
 }
